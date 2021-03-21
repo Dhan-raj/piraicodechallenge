@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our employees - pirai infotech</title>
+    <link rel="icon" href="./piraiicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub_container">
+        <h1>Employee list - pirai infotech</h1>
+        <form
+          onsubmit="event.preventDefault();onFormSubmit();"
+          autocomplete="off"
+        >
+          <div>
+            <label>Full Name*</label>
+            <input type="text" name="fullName" id="fullName" required />
+          </div>
+          <div>
+            <label>Employeeid</label>
+            <input type="number" name="employeeid" id="employeeid" required />
+          </div>
+          <div>
+            <label>Salary</label>
+            <input type="number" name="salary" id="salary" required />
+          </div>
+          <div>
+            <label>City</label>
+            <input type="text" name="city" id="city" required />
+          </div>
+          <div class="form-action-buttons">
+            <input id="submit" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <div class="table_container">
+        <table
+          class="list"
+          id="employeeList"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+        >
+          <thead class="tbl-header">
+            <tr class="tbl-content">
+              <th>Full Name</th>
+              <th>Employeeid</th>
+              <th>Salary</th>
+              <th>City</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
